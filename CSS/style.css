@@ -165,10 +165,28 @@ a{
 /*SECCION: RECOMENDACIONES*/
 
 .titulo-recomendaciones{
-    font-size: 40px;
-    margin-bottom: 40px;
+    font-size: 42px;
+    margin-bottom: 42px;
+    animation-name: prueba;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    }
+
+    @keyframes prueba{
+        0%{
+            font-size: 48px;
+        }
+        50%{
+            font-size: 50px;
+            color: red;
+                }
+        100%{
+            font-size: 52px;
+        }                    
     
-}
+    }
+
 
 .articulo-recomendaciones{
     width: 100%;
@@ -178,10 +196,16 @@ a{
     margin: auto;
 }
 
-.titulo-recomendaciones2{
+.titulo-recomendaciones{
     font-size: 40px;
     margin-bottom: 40px;
+    animation-name: prueba;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;    
 }
+
+
 
 .articulo-recomendaciones2{
     width: 100%;
@@ -190,6 +214,29 @@ a{
     font-family: 'IBM Plex Sans Arabic', sans-serif;
     margin: auto;
     border-top: 6px solid rgb(142, 161, 142);  
+}
+
+.titulo-recomendaciones2{
+    font-size: 35px;
+    margin-bottom: 35px;
+    animation-name: prueba2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;    
+}
+
+@keyframes prueba2{
+0%{
+    font-size: 32px;
+}
+50%{
+    font-size: 35px;
+    
+}    
+    
+100%{
+    font-size: 38px;
+}                    
 }
 
 .foto-recomendaciones{
@@ -205,8 +252,8 @@ a{
     margin-top: 40px;
     font-size: 40px;
     margin-bottom: 40px;
-    
-}
+    }
+
 
 .articulo-introductorio{
     width: 100%;
