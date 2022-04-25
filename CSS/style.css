@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Montserrat:ital,wght@1,200&family=Nanum+Gothic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Inicio*/
+
+/*Cuerpo*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #A2C3A4;
+}
+
+/*Encabezado*/
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 120px;
+    background-color: #081C2F;
+    align-items: center;
+    padding: 10px;
+}
+
+h1{    
+    font-size: 40px;
+    color: beige;  
+    } 
+
+
+/*Menu de navegacion*/
+
+.menu li a{
+    font-weight: 600;
+    padding-right: 10px;
+}    
+
+.ul-pages{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+a{    
+    color: white;
+}
+.menu li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu li a:hover{
+    color: black;
+    }
+
+/*Primer Articulo*/
+
+.section-serie{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "titulo-serie1 titulo-serie1"
+    "video-serie video-serie"
+    "parrafo-serie1 parrafo-serie1";
+    gap:20px;
+}
+
+
+.articulo-serie{
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+    padding: 10px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    margin-top: 20px;      
+}
+
+
+.video-serie{
+    grid-area: video-serie;
+}
+.titulo-serie1{
+    grid-area: titulo-serie;
+    font-size: 40px;
+    margin-bottom: 40px;
+    }
+
+.parrafo-serie1{
+    grid-area: parrafo-serie;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*Segundo Articulo*/
+
+.section-serie{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "titulo-serie2 titulo-serie2"
+    "imagen-you imagen-you"
+    "parrafo-serie2 parrafo-serie2";
+    gap:20px;
+}
+
+.articulo-serie2{
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+    padding: 10px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    border-top: 6px solid green;   
+    margin-top: 30px;
+    }
+
+.titulo-serie2{
+    grid-area: titulo-serie2;
+    font-size: 40px;
+    margin-bottom: 40px;
+    }
+
+.parrafo-serie2{
+    grid-area: parrafo-serie;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    }
+
+.imagen-you{
+    grid-area: imagen-you;
+    width: 500px;
+    height: 300px;
+    margin: 8px;
+    
+}
+
+/*Pie de pagina*/
+
+.footer{
+    background-color: #20515F;
+    width: 100%;
+    margin-top: 100px;
+    height: 50px;
+    }
+
+
+.footer-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    }
+
+.img-redes{
+    width: 30px;
+    padding: 5px;    
+}
+
+/*SECCION: RECOMENDACIONES*/
+
+.titulo-recomendaciones{
+    font-size: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.articulo-recomendaciones{
+    width: 100%;
+    max-width: 1000px;
+    padding: 60px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    margin: auto;
+}
+
+.titulo-recomendaciones2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.articulo-recomendaciones2{
+    width: 100%;
+    max-width: 1000px;
+    padding: 60px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    margin: auto;
+    border-top: 6px solid rgb(142, 161, 142);  
+}
+
+.foto-recomendaciones{
+    width: 250px;
+    height: 400px;
+    margin: 0px;
+}
+
+
+/*SECCION: RANKING*/
+
+.titulo-ranking{
+    margin-top: 40px;
+    font-size: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.articulo-introductorio{
+    width: 100%;
+    padding: 15px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 20px;
+
+}
+
+.articulo-ranking{
+    width: 100%;
+    max-width: 1000px;
+    padding: 15px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    }
+
+.imagen-sherlock{
+    height: 500px;
+    width: auto;
+}
+
+/*SECCION: ESTRENOS*/
+
+.titulo-principal{
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.titulo-estreno{
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.articulo-estrenos{
+    width: 100%;
+    max-width: 1000px;
+    padding: 15px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.formulario-contacto-fieldset{
+    width: 60%;
+    margin: 40px auto 100px;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-template-areas: 
+    "label-nombre label-nombre"
+    "nombre nombre"
+    "label-email label-email"
+    "email email"
+    "label-telefono label-telefono"
+    "telefono telefono"
+    "label-mensaje label-mensaje"
+    "mensaje mensaje"
+    "none enviar";
+    gap: 10px;
+}
+
+.titulo-contacto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding-top: 150px;
+    color: #11121d;
+    text-align: center;
+    }
+
+#nombre, #email, #telefono, #mensaje{
+    background-color: #edf5f3;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+}
+
+#mensaje{
+    grid-area: mensaje;
+    height: 150px;
+}
+
+label{
+    text-align: left;
+    padding-left: 10px;
+}
+
+#enviar{
+    grid-area: enviar;
+    background-color: #4ae6bf;
+        width: 65px;
+        height: 35px;
+        border: none;
+        border-radius: 20px;
+        margin-bottom: 5px;
+}
+
+.label-nombre{grid-area: label-nombre;}
+#nombre{grid-area: nombre;}
+.label-email{grid-area: label-email;}
+#email{grid-area: email;}
+.label-telefono{grid-area: label-telefono;}
+#telefono{grid-area: telefono;}
+.label-mensaje{ grid-area: label-mensaje;}
+
+
+
