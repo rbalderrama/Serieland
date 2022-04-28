@@ -18,15 +18,18 @@ body{
 
 /*Encabezado*/
 
-
 .fondo{
     background-color: #081C2F;
+        
 }
 
 .titulo{
     font-size: 35px;
     margin: 15px;
+    
 }
+
+
 
 
 /*Primer Articulo*/
@@ -59,7 +62,7 @@ body{
     grid-area: titulo-serie;
     font-size: 40px;
     margin-bottom: 40px;
-    }
+        }
 
 .parrafo-serie1{
     grid-area: parrafo-serie;
@@ -87,14 +90,14 @@ body{
     padding: 10px;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
     border-top: 6px solid green;   
-    margin-top: 30px;
+    margin-top: 25px;
     }
 
 .titulo-serie2{
     grid-area: titulo-serie2;
     font-size: 40px;
     margin-bottom: 40px;
-    }
+        }
 
 .parrafo-serie2{
     grid-area: parrafo-serie;
@@ -113,19 +116,25 @@ body{
 
 /*Pie de pagina*/
 
-.footer{
-    background-color: #20515F;
+footer{ 
     width: 100%;
     margin-top: 100px;
-    height: 50px;
-    }
+    background-color: #20515F;
+  
+}
+.h5-footer{
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
 
-
-.footer-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;    
-    }
+}
+.img-redes{
+    width: 30px;
+    padding: 5px;
+}
+.a-redes{
+    color: white;
+}
 
 .img-redes{
     width: 30px;
@@ -264,6 +273,8 @@ body{
     font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
+
+
 .formulario-contacto-fieldset{
     width: 60%;
     margin: 40px auto 100px;
@@ -325,6 +336,4 @@ label{
 .label-telefono{grid-area: label-telefono;}
 #telefono{grid-area: telefono;}
 .label-mensaje{ grid-area: label-mensaje;}
-
-
 
