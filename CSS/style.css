@@ -18,46 +18,16 @@ body{
 
 /*Encabezado*/
 
-.header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 120px;
+
+.fondo{
     background-color: #081C2F;
-    align-items: center;
-    padding: 10px;
 }
 
-h1{    
-    font-size: 40px;
-    color: beige;  
-    } 
-
-
-/*Menu de navegacion*/
-
-.menu li a{
-    font-weight: 600;
-    padding-right: 10px;
-}    
-
-.ul-pages{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.titulo{
+    font-size: 35px;
+    margin: 15px;
 }
 
-a{    
-    color: white;
-}
-.menu li{
-    display: inline-block;
-    padding: 10px;
-}
-
-.menu li a:hover{
-    color: black;
-    }
 
 /*Primer Articulo*/
 
